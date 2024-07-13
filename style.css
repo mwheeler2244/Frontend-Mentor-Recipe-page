@@ -1,0 +1,151 @@
+:root {
+  --Nutmeg: hsl(14, 45%, 36%);
+  --Dark-Raspberry: hsl(332, 51%, 32%);
+
+  --White: hsl(0, 0%, 100%);
+  --Rose: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --Light-Grey: hsl(30, 18%, 87%);
+  --Wenge-Brown: hsl(30, 10%, 34%);
+  --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  max-width: 1440px;
+  margin-inline: auto;
+  line-height: 1.6;
+  font-family: "Young Serif", sans-serif;
+}
+h1 {
+  font-size: 2rem;
+  line-height: 1;
+  text-align: left;
+  color: var(--Dark-Charcoal);
+}
+
+h2 {
+  color: var(--Nutmeg);
+}
+h3 {
+  color: var(--Dark-Raspberry);
+}
+p,
+li,
+table {
+  color: var(--Wenge-Brown);
+}
+
+/*=============== HOME ===============*/
+.home__title {
+  text-align: center;
+  max-width: 80%;
+  margin-inline: auto;
+  padding-block: 2rem;
+}
+.home__title p {
+  text-align: left;
+  padding-block: 2rem;
+}
+/*=============== preperation__time ===============*/
+.preperation__time {
+  background-color: var(--Rose);
+  padding: 2rem;
+  margin-inline: 2rem;
+}
+.prep__title,
+li:not(:last-of-type) {
+  padding-bottom: 1rem;
+}
+li {
+  padding-left: 1rem;
+  margin-left: 1rem;
+}
+/*=============== ingredients===============*/
+.ingredients,
+.instructions,
+.nutrition {
+  padding-block: 2rem;
+  margin-inline: 2rem;
+}
+.ingredients__title h2,
+.instructions h2,
+.nutrition h2 {
+  padding-bottom: 2rem;
+}
+.border__section {
+  border-bottom: 2px solid var(--Light-Grey);
+  padding-top: 3rem;
+}
+/*=============== INSTRUCTIONS ===============*/
+
+Ol li::marker {
+  color: var(--Nutmeg);
+}
+/*=============== NUTRITION ===============*/
+.nutrition p {
+  font-size: 0.9rem;
+  padding-bottom: 1rem;
+}
+table,
+td {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.315);
+  border-collapse: collapse;
+
+  padding: 0.5rem 2.5rem;
+}
+table {
+  margin: auto;
+  width: 60%;
+}
+td:nth-child(2) {
+  color: var(--Nutmeg);
+}
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+
+/* For medium devices */
+
+/* For large devices */
+@media (min-width: 1000px) {
+  body {
+    background-color: var(--Rose);
+  }
+  .container {
+    background-color: white;
+    max-width: 70%;
+    margin-inline: auto;
+    border-radius: 12px;
+    margin-block: 7rem;
+  }
+  .home,
+  .preperation__time,
+  .ingredients,
+  .instructions,
+  .nutrition {
+    max-width: 90%;
+    margin-inline: auto;
+
+    padding-top: 2.5rem;
+  }
+  img {
+    border-radius: 12px;
+  }
+  .home__title {
+    max-width: 100%;
+  }
+}
